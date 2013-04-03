@@ -32,7 +32,7 @@ Then you need to pass 3 arguments to Mopper's method:
 
   class ImportPersonTranslates < ActiveRecord::Migration
     def up
-      Person.import_translations locale: :en, fields: [:name], file_path: Rails.root.join('db', 'import', 'import.csv')
+      Person.import_translations locale: :en, fields: [:name], file_path: File.join(Rails.root, 'db', 'import', 'import.csv')
     end
   end
 
