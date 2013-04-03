@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Mopper::VERSION
   spec.authors       = ["Andrey Eremin"]
   spec.email         = ["dsoft88@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Import translations for Model from SCV file using Globalize3}
+  spec.summary       = %q{Import translations for Model from SCV file using Globalize3}
+  spec.homepage      = "https://github.com/developer88/mopper"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

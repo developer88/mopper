@@ -1,6 +1,6 @@
 # Mopper
 
-TODO: Write a gem description
+Import translations for table from SCV file using Globalize3
 
 ## Installation
 
@@ -18,7 +18,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Mopper adds `import_translations` class method on any model.
+
+You need to have a csv file in UTF-8 with `;` as columns separator with at least 2 columns: first with object id, second with translated data for the object
+
+Then you need to pass 3 arguments to Mopper's method:
+
+*  locale - locale name for importing translations
+*  fileds - array of fields for translation table
+*  file_path - path to *.csv file
+
+```ruby
+
+  class ImportMedicSpecialities < ActiveRecord::Migration
+    def up
+      MedicSpeciality.import_translations locale: :en, fields: [:name], file_path: File.join(File.join(Rails.root, 'db', 'import'), 'import.csv')
+    end
+  end
+
+```
 
 ## Contributing
 
