@@ -1,5 +1,6 @@
 require "mopper/version"
+require 'globalize3'
+require 'csv'
+require "mopper/translations"
 
-module Mopper
-  # Your code goes here...
-end
+ActiveRecord::Base.extend Mopper::Translations
