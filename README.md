@@ -1,5 +1,7 @@
 # Mopper
 
+![Travis-ci](https://travis-ci.org/developer88/mopper.png)
+
 Import translations for table from SCV file using Globalize3
 
 ## Installation
